@@ -1,0 +1,118 @@
+.main {
+  border-radius: 5px;
+  color: var(--color-secondary);
+  height: 100vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  color: var(--color-primary);
+}
+
+.about__text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.about__image {
+  width: 100vw;
+  height: 70%;
+  margin-top: 5%;
+  background: url("../../assets/emp.jpeg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing {
+  background: linear-gradient(
+      180deg,
+      var(--color-dark) 5%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+    url("../../assets/mockup.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.about__carousel {
+  display: grid;
+  /**responsive**/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  scrollbar-width: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about__carousel__item {
+  /*image will adapt*/
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.about__carousel__item__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: var(--color-dark);
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 10px 0px var(--color-primary);
+  color: var(--color-primary);
+}
+
+#i1 {
+  background: url("../../assets/react.svg");
+  background-position: center;
+  background-size: cover;
+}
+#i2 {
+  background: url("../../assets/spring.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#i3 {
+  background: url("../../assets/firebase.png");
+  background-position: center;
+  background-size: cover;
+}
+#i4 {
+  background: url("../../assets/bootstrap.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#i5 {
+  background: url("../../assets/MaterialUi.png");
+  background-position: center;
+  background-size: cover;
+}
