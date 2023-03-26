@@ -22,10 +22,11 @@ function Header() {
           className="nav__toggle"
           onClick={() => {
             document.getElementById("nav-menu").classList.toggle("active");
+            document.getElementById("nav__cont").classList.toggle("exist");
           }}
         ></button>
       </div>
-      <nav className="nav">
+      <nav className="nav exist" id="nav__cont">
         <ul className="nav__list" id="nav-menu">
           <li className="nav__item">
             <a

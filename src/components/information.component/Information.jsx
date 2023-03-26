@@ -8,28 +8,32 @@ export default function Information() {
     <main className="main">
       <section className="about" id="about">
         <h2 className="about__title">About</h2>
-        <p className="about__text">
-          I create high-quality software solutions tailored to my clients' needs
-          and budgets. With my extensive experience as a developer, designer,
-          and project manager, I have worked with a variety of industries and
-          stay up-to-date with the latest trends and technologies to provide
-          innovative and effective solutions. Contact me to achieve your
-          technology goals.
-        </p>
-        <div className="about__image"></div>
+        <div className="grid-cont">
+          <p className="about__text">
+            I create high-quality software solutions tailored to my clients'
+            needs and budgets. With my extensive experience as a developer,
+            designer, and project manager, I have worked with a variety of
+            industries and stay up-to-date with the latest trends and
+            technologies to provide innovative and effective solutions. Contact
+            me to achieve your technology goals.
+          </p>
+          <div className="about__image"></div>
+        </div>
       </section>
 
       <section className="about" id="pricing">
         <h2 className="about__title">Pricing</h2>
-        <p className="about__text">
-          I offer flexible and affordable pricing plans to make my software
-          accessible to businesses of all sizes and budgets. My basic plan
-          includes all essential features, while our premium plan adds advanced
-          features for those who need them. We also offer a free trial for all
-          plans. Try my software today and see how we can help your business
-          grow.
-        </p>
-        <div className="about__image pricing"></div>
+        <div className="grid-cont">
+          <p className="about__text">
+            I offer flexible and affordable pricing plans to make my software
+            accessible to businesses of all sizes and budgets. My basic plan
+            includes all essential features, while our premium plan adds
+            advanced features for those who need them. We also offer a free
+            trial for all plans. Try my software today and see how we can help
+            your business grow.
+          </p>
+          <div className="about__image pricing"></div>
+        </div>
       </section>
 
       <section className="about" id="tech">
