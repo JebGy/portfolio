@@ -1,32 +1,83 @@
-import React from 'react';
-import './header.css';
+import React from "react";
+import "./header.css";
 
 function Header() {
   return (
     <header className="header">
       <div className="container">
         <div className="logo">
-          <a href="#">MyWebsite</a>
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("home")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Favio
+          </a>
         </div>
-        <nav className="nav">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a className="nav__link" href="#about">About</a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#pricing">Pricing</a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#technologies">Technologies</a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </nav>
+        <button
+          className="nav__toggle"
+          onClick={() => {
+            document.getElementById("nav-menu").classList.toggle("active");
+          }}
+        ></button>
       </div>
+      <nav className="nav">
+        <ul className="nav__list" id="nav-menu">
+          <li className="nav__item">
+            <a
+              className="nav__link"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("about")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About
+            </a>
+          </li>
+          <li className="nav__item">
+            <a
+              className="nav__link"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("pricing")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Pricing
+            </a>
+          </li>
+          <li className="nav__item">
+            <a
+              className="nav__link"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("tech")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Technologies
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
+/**
+ * <li className="nav__item">
+              <a className="nav__link" href="/proyects">Projects</a>
+            </li>
+ */
 
 export default Header;

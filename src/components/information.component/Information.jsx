@@ -6,7 +6,7 @@ import "./information.style.css";
 export default function Information() {
   return (
     <main className="main">
-      <section className="about">
+      <section className="about" id="about">
         <h2 className="about__title">About</h2>
         <p className="about__text">
           I create high-quality software solutions tailored to my clients' needs
@@ -19,7 +19,7 @@ export default function Information() {
         <div className="about__image"></div>
       </section>
 
-      <section className="about">
+      <section className="about" id="pricing">
         <h2 className="about__title">Pricing</h2>
         <p className="about__text">
           I offer flexible and affordable pricing plans to make my software
@@ -32,7 +32,7 @@ export default function Information() {
         <div className="about__image pricing"></div>
       </section>
 
-      <section className="about">
+      <section className="about" id="tech">
         <h2 className="about__title">Technologies</h2>
 
         <div className="about__carousel">
