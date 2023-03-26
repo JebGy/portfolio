@@ -17,10 +17,10 @@ export default function Information() {
             technologies to provide innovative and effective solutions. Contact
             me to achieve your technology goals.
           </p>
+
           <div className="about__image"></div>
         </div>
       </section>
-
       <section className="about" id="pricing">
         <h2 className="about__title">Pricing</h2>
         <div className="grid-cont">

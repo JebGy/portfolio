@@ -1,4 +1,4 @@
-.hero__container{
+.hero__container {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -13,8 +13,19 @@
   background-size: cover;
   background-position: center;
   filter: brightness(0.2);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  --mask: radial-gradient(
+        67.08px at 50% calc(100% - 90px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(67.08px at 50% calc(100% + 60px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
+
+/*create a wave clip-path here*/
 
 .hero__content {
   position: absolute;
@@ -32,7 +43,7 @@
   line-height: 1.2;
 }
 
-.hero__title--name{
+.hero__title--name {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
