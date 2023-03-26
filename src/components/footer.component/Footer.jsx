@@ -5,7 +5,7 @@ import './footer.style.css';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container__footer">
         <div className="row">
           <div className="col-md-6">
             <p>© 2023 Favio Munayco , Inc. All rights reserved.</p>

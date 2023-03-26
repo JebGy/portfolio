@@ -2,11 +2,15 @@
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: 50px 0;
+  box-sizing: border-box;
 }
 
 .footer p {
   margin-bottom: 0;
+  margin: 0 auto;
 }
+
+.container{}
 
 .social-buttons {
   float: right;
@@ -14,7 +18,7 @@
 
 .social-buttons li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .social-buttons li a {
@@ -37,5 +41,8 @@
   .social-buttons {
     float: none;
     margin-top: 20px;
+  }
+  .container {
+    text-align: center;
   }
 }
