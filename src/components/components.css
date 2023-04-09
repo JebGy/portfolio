@@ -734,7 +734,7 @@
   .info_content {
     margin: 10px auto;
     overflow-x: hidden;
-    width: 80%;
+    width: 70%;
   }
 
   .info_container {
@@ -756,6 +756,8 @@
   .info_item {
     margin: 10px auto;
     overflow-x: hidden;
+    width: 80%;
+    
   }
   .home_image {
     width: 100%;
