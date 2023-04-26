@@ -60,14 +60,14 @@ export default function Projects() {
             <h2 className="project_title">ProCalc2</h2>
             <p className="project_description">
               This is a desktop app. It was made using Java and Python. Each
-              component was made manually. Open Source project.
+              component was made manually.
             </p>
             <a
               className="project_link"
-              href="https://github.com/JebGy/ProCalc2"
+              href="https://www.dropbox.com/s/m487d5heohl8i4b/ProCalc2-2.6.rar?dl=1"
               target="_blank"
             >
-              See more
+              Download 2.6.0
             </a>
           </div>
 
